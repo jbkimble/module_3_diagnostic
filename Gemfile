@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'faraday'
+gem 'figaro'
 gem 'byebug'
 gem 'rails', '4.2.5.1'
 gem 'sqlite3'
@@ -13,12 +15,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
+  gem 'pry'
   gem 'rspec-rails'
   gem 'factory_girl'
-  gem 'faraday'
-  gem 'figaro'
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
+end
+
+group :test do
+  gem 'vcr'
+  gem 'webmock'
 end
