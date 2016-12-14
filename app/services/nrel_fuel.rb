@@ -1,5 +1,6 @@
 class NrelFuel
   attr_reader :name, :address, :fuel_type, :distance, :access_times
+
   def initialize(attributes={})
       @name = attributes[:station_name]
       @address = attributes[:street_address]
