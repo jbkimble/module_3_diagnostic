@@ -1,1 +1,8 @@
 <h1>10 closest electric / propane stations within 6 miles sorted by distance</h1>
+<%= @fuel_stations.each do |station|%>
+  <h3> Name: <%= station[:station_name] %></h3>
+  Address: <%= station[:street_address] %>
+  Fuel Types: <%= station[:fuel_type_code] %>
+  Distance: <%= station[:distance] %>
+  Access Times: <%= station[:access_days_time] %>
+<% end %>
