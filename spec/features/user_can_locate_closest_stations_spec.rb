@@ -4,6 +4,7 @@ describe 'As a user' do
   context 'I can enter a zipcode' do
     it 'returns the 10 closest electric / propane stations within 6 miles sorted by distance' do
       visit root_path
+      save_and_open_page
       fill_in "Zipcode", with: "80203"
       click_on "Locate"
 
